@@ -1,0 +1,204 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;  
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Navbar styling  */
+/* Logo and Image  */
+#logo {
+    margin: 2px 20px;
+}
+#logo img {
+    height: 60px;
+    width: 100px;
+    margin: 3px 4px;
+}
+/* list  */
+#navbar {
+    position: relative;
+}
+
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 5px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar ul li a:hover{
+    color: lightblue;
+    background-color:white ;
+}
+
+/* section styling */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 571px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+   content: "";
+   position: absolute;
+   background: url('stl.jpg') no-repeat center center/cover;
+   width: 100%;
+   height: 571px;
+   z-index: -1;
+   opacity: 0.80;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* utility class  */
+.hp1 {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.hp1-center{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hp2 {
+    font-size: 2rem ;
+    padding: 12px;
+}
+.center {
+    text-align: center;
+}
+/* button styling  */
+.btn {
+    padding: 8px 25px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* services section styling  */
+#services{
+    margin: 34px;
+    display: flex;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+#services1{
+    margin: 34px;
+    display: flex;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 34px;
+    border-radius: 15px;
+    margin: 3px 6px;
+    
+}
+#services .box img{
+    height: 200px;
+    margin: auto;
+    display: block;
+    
+}
+#services1 .box1{
+    border: 2px solid black;
+    padding: 34px;
+    border-radius: 15px;
+    margin: 3px 6px;
+    
+}
+#services1 .box1 img{
+    height: 200px;
+    margin: auto;
+    display: block;
+    
+}
+.btn1{
+    padding: 8px 25px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+#services .box p {
+    font-family: 'Poppins', sans-serif;
+}
+#services1 .box1 p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* client section styling  */
+#client-section {
+   position: relative;
+   height: 344px;
+}
+#client-section {
+    content: "";
+    position: absolute;
+    background: url('stl.jpg') no-repeat center center/cover;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+}
+
+   
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item {
+    padding: 34px;
+}
+#clients img{
+    height: 132px;
+}
